@@ -1,0 +1,138 @@
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 17px; }
+
+h4 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 18px;
+  color: #5e5f5f;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 17px; }
+
+p {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400; }
+
+.main-header {
+  padding-top: 64px;
+  background-color: #eff0f2;
+  text-align: center; }
+  .main-header .main-menu-wrap {
+    padding-bottom: 190px; }
+    .main-header .main-menu-wrap .logo {
+      float: left;
+      display: inline-block; }
+    .main-header .main-menu-wrap .hamburger {
+      display: inline-block;
+      float: right;
+      background-color: #606061;
+      width: 30px;
+      height: 4px;
+      margin-top: 10px; }
+      .main-header .main-menu-wrap .hamburger:before {
+        display: block;
+        content: "";
+        width: 30px;
+        height: 4px;
+        margin-top: 9px;
+        background-color: #606061; }
+      .main-header .main-menu-wrap .hamburger:after {
+        display: block;
+        content: "";
+        width: 30px;
+        height: 4px;
+        margin-top: 4px;
+        background-color: #606061; }
+  .main-header h1 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #505050;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+    text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+    letter-spacing: 0.06em; }
+    .main-header h1 span {
+      background-color: #b3f3ef; }
+  .main-header button {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 11px 48px;
+    background-color: #eff0f2;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    margin-top: 135px;
+    margin-bottom: 196px; }
+  .main-header .header-bg-img {
+    position: relative; }
+    .main-header .header-bg-img img {
+      position: absolute;
+      right: 50px;
+      top: -220px; }
+
+.about-us {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-color: #f8fafa; }
+  .about-us h4 {
+    padding-bottom: 120px; }
+  .about-us .slider {
+    position: relative;
+    text-align: center;
+    overflow: hidden; }
+    .about-us .slider .slider-bg {
+      position: absolute;
+      background-color: #eff0f2;
+      width: 480px;
+      height: 412px;
+      top: 35px;
+      left: 50%;
+      margin-left: -240px;
+      z-index: 1; }
+    .about-us .slider img {
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      position: relative; }
+    .about-us .slider .input-wrap {
+      padding-top: 40px; }
+      .about-us .slider .input-wrap input[type="radio"] {
+        display: none; }
+        .about-us .slider .input-wrap input[type="radio"] + .radio-label:before {
+          content: '';
+          display: inline-block;
+          border-radius: 3px;
+          background-color: #d0d0d0;
+          width: 10px;
+          height: 10px;
+          -webkit-transition: all 250ms ease;
+          transition: all 250ms ease;
+          margin: 2px; }
+        .about-us .slider .input-wrap input[type="radio"]:checked + .radio-label:before {
+          background-color: #71f6eb; }
+  .about-us h3 {
+    margin: 0;
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase; }

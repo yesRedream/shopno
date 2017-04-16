@@ -1,0 +1,81 @@
+.main-header {
+	padding-top: 64px;
+	background-color:  rgb(239, 240, 242);
+	text-align: center;
+
+	.main-menu-wrap {
+		padding-bottom: 190px;
+		.logo {
+			float: left;
+			display: inline-block;
+		}
+		
+		.hamburger {
+			display: inline-block;
+			float: right;
+			background-color: rgb(96, 96, 97);
+			width: 30px;
+			height: 4px;
+			margin-top: 10px;
+			
+			&:before {
+	        	display: block;
+	        	content: "";
+	        	width: 30px;
+				height: 4px;
+				margin-top: 9px;
+				background-color: rgb(96, 96, 97);
+	    	}
+
+	    	&:after {
+	    		display: block;
+	        	content: "";
+	        	width: 30px;
+				height: 4px;
+				margin-top: 4px;
+				background-color: rgb(96, 96, 97);
+	    	}	
+		}
+	}
+
+	h1 {
+		font-family: "Montserrat";
+		text-transform: uppercase;
+		color:  #505050;
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 60px;
+		text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+		letter-spacing: 0.06em;
+
+		span {
+			background-color: rgb(179, 243, 239);
+		}
+	}	
+
+	button {
+		text-transform: uppercase;
+		font-family: "Montserrat";
+		color:  #000;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		padding: 11px 48px;
+		background-color:  rgb(239, 240, 242);
+		border-radius: 2px;
+		border-width: 2px;
+		border-color:  #000;
+		border-style: solid;
+		margin-top: 135px;
+		margin-bottom: 196px;
+	}
+
+	.header-bg-img {
+		position: relative;
+		img {
+			position: absolute;
+			right: 50px;
+			top: -220px;
+		}
+	}
+}

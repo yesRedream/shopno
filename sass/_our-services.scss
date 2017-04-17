@@ -1,0 +1,175 @@
+.our-services {
+	background-color:  #f9fbfb;
+	padding-top: 115px;
+
+	.services-wrap {
+		padding-top: 115px;
+
+		.service {
+			background-color: rgb(78, 78, 78);
+			color: #fff;
+			margin-bottom: 15px;
+			position: relative;
+
+
+			.service-wrap {
+				width: 100%;
+				height: 100%;
+				padding: 140px 115px 50px 65px;
+				-webkit-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				
+				&:hover {
+					background: #71f5ea;
+					padding-top: 45px;
+					color: black;
+
+					.dots {
+						display: none;
+					}
+
+					.hidden-text {
+						display: inline;
+					}
+
+				
+					
+					.more-wrap {
+
+						.more {
+							opacity: 0;
+						}
+					
+						.arrow {
+							transform: translateX(-135px) rotate(135deg);
+							background-color: #44948d;
+
+							&:before,
+							&:after {
+								width: 10px;
+								background-color: #44948d;
+							}
+
+							&:before {
+								transform: rotate(90deg) translateY(-5px) translateX(6px);
+							}
+
+							&:after {
+								transform: rotate(-90deg) translateY(5px) translateX(7px);
+							}
+						}
+					}
+				}
+
+			}
+
+			&-1 {
+				background: url(../img/service-1.jpg) no-repeat center;
+				height: 422px;
+			}
+
+			&-2 {
+				background: url(../img/service-2.jpg) no-repeat center;
+				height: 422px;
+				width: 474px;
+				left: -15px;
+
+				.service-wrap {
+					width: 474px;
+					padding-right: 60px;
+				}
+			}
+
+			&-3 {
+				background: url(../img/service-3.jpg) no-repeat center;
+				height: 371px;
+			}
+
+			&-4 {
+				background: url(../img/service-4.jpg) no-repeat center;
+				height: 371px;
+				width: 474px;
+				left: -15px;
+
+				.service-wrap {
+					width: 474px;
+					padding-right: 60px;
+				}
+			}
+
+			&-5 {
+				background: url(../img/service-5.jpg) no-repeat center;
+				height: 370px;
+				width: 474px;
+	
+				.service-wrap {
+					width: 474px;
+					padding-right: 60px;
+				}
+			}
+
+			&-6 {
+				background: url(../img/service-6.jpg) no-repeat center;
+				height: 370px;
+				width: 651px;
+			}
+
+			
+			p {				
+				.hidden-text {
+					display: none;
+				}
+
+			}
+			
+			.more-wrap {
+				position: absolute;
+				bottom: 50px;
+				
+				.more {
+					display: inline-block;
+					margin: 0;
+					font-size: 18px;
+					text-transform: uppercase;
+				}
+
+				.arrow {
+					margin-left: 20px;
+					bottom: 5px;
+					display: inline-block;
+					position: relative;
+					cursor: pointer;
+					width: 20px;
+					height: 2px;
+					background-color:  rgba(255, 255, 255, 0.78);
+					-webkit-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						width: 7px;
+						height: 2px;
+						top: -10px;
+						background-color: rgba(255, 255, 255, 0.78);
+						transform: translateY(7px) translateX(13px) rotate(45deg);
+					}
+
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						width: 7px;
+						height: 2px;
+						bottom: -10px;
+						background-color: rgba(255, 255, 255, 0.78);
+						transform: translateY(-7px) translateX(13px) rotate(-45deg);
+					}
+				}
+			}
+		}
+	}
+}

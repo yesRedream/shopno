@@ -132,6 +132,7 @@ p {
           background-color: #d0d0d0;
           width: 10px;
           height: 10px;
+          -webkit-transition: all 250ms ease;
           transition: all 250ms ease;
           margin: 2px; }
         .about-us .slider .input-wrap input[type="radio"]:checked + .radio-label:before {
@@ -167,7 +168,6 @@ p {
         height: 100%;
         padding: 140px 115px 50px 65px;
         -webkit-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
         .our-services .services-wrap .service .service-wrap:hover {
           background: #71f5ea;
@@ -181,20 +181,17 @@ p {
             opacity: 0; }
           .our-services .services-wrap .service .service-wrap:hover .more-wrap .arrow {
             -webkit-transform: translateX(-135px) rotate(135deg);
-            -ms-transform: translateX(-135px) rotate(135deg);
-            transform: translateX(-135px) rotate(135deg);
+                    transform: translateX(-135px) rotate(135deg);
             background-color: #44948d; }
             .our-services .services-wrap .service .service-wrap:hover .more-wrap .arrow:before, .our-services .services-wrap .service .service-wrap:hover .more-wrap .arrow:after {
               width: 10px;
               background-color: #44948d; }
             .our-services .services-wrap .service .service-wrap:hover .more-wrap .arrow:before {
               -webkit-transform: rotate(90deg) translateY(-5px) translateX(6px);
-              -ms-transform: rotate(90deg) translateY(-5px) translateX(6px);
-              transform: rotate(90deg) translateY(-5px) translateX(6px); }
+                      transform: rotate(90deg) translateY(-5px) translateX(6px); }
             .our-services .services-wrap .service .service-wrap:hover .more-wrap .arrow:after {
               -webkit-transform: rotate(-90deg) translateY(5px) translateX(7px);
-              -ms-transform: rotate(-90deg) translateY(5px) translateX(7px);
-              transform: rotate(-90deg) translateY(5px) translateX(7px); }
+                      transform: rotate(-90deg) translateY(5px) translateX(7px); }
       .our-services .services-wrap .service-1 {
         background: url(../img/service-1.jpg) no-repeat center;
         height: 422px; }
@@ -248,7 +245,6 @@ p {
           height: 2px;
           background-color: rgba(255, 255, 255, 0.78);
           -webkit-transition: all 0.5s ease-in-out;
-          -o-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
           .our-services .services-wrap .service .more-wrap .arrow:before {
             content: '';
@@ -259,8 +255,7 @@ p {
             top: -10px;
             background-color: rgba(255, 255, 255, 0.78);
             -webkit-transform: translateY(7px) translateX(13px) rotate(45deg);
-            -ms-transform: translateY(7px) translateX(13px) rotate(45deg);
-            transform: translateY(7px) translateX(13px) rotate(45deg); }
+                    transform: translateY(7px) translateX(13px) rotate(45deg); }
           .our-services .services-wrap .service .more-wrap .arrow:after {
             content: '';
             display: block;
@@ -270,5 +265,145 @@ p {
             bottom: -10px;
             background-color: rgba(255, 255, 255, 0.78);
             -webkit-transform: translateY(-7px) translateX(13px) rotate(-45deg);
-            -ms-transform: translateY(-7px) translateX(13px) rotate(-45deg);
-            transform: translateY(-7px) translateX(13px) rotate(-45deg); }
+                    transform: translateY(-7px) translateX(13px) rotate(-45deg); }
+
+.our-team {
+  padding-top: 115px;
+  padding-bottom: 100px; }
+  .our-team .team-wrap {
+    padding-top: 115px; }
+    .our-team .team-wrap .team-img {
+      width: 370px;
+      height: 440px;
+      padding: 180px 18px 15px 18px;
+      margin-bottom: 15px;
+      overflow: hidden; }
+      .our-team .team-wrap .team-img-1 {
+        background-image: url(../img/team-1.jpg); }
+        .our-team .team-wrap .team-img-1:hover .team-hover {
+          opacity: 1; }
+      .our-team .team-wrap .team-img-2 {
+        background-image: url(../img/team-2.jpg); }
+        .our-team .team-wrap .team-img-2:hover .team-hover {
+          opacity: 1; }
+      .our-team .team-wrap .team-img-3 {
+        background-image: url(../img/team-3.jpg); }
+        .our-team .team-wrap .team-img-3:hover .team-hover {
+          opacity: 1; }
+      .our-team .team-wrap .team-img-4 {
+        background-image: url(../img/team-4.jpg); }
+        .our-team .team-wrap .team-img-4:hover .team-hover {
+          opacity: 1; }
+      .our-team .team-wrap .team-img-5 {
+        background-image: url(../img/team-5.jpg); }
+        .our-team .team-wrap .team-img-5:hover .team-hover {
+          opacity: 1; }
+      .our-team .team-wrap .team-img-6 {
+        background-image: url(../img/team-1.jpg); }
+        .our-team .team-wrap .team-img-6:hover .team-hover {
+          opacity: 1; }
+    .our-team .team-wrap .team-hover {
+      opacity: 0;
+      position: relative;
+      padding: 40px;
+      background-color: #70f6eb;
+      box-shadow: 3px 6px 16px 0px rgba(20, 20, 21, 0.18);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      .our-team .team-wrap .team-hover:before {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 20px solid #70f6eb;
+        top: -20px;
+        left: 20px; }
+      .our-team .team-wrap .team-hover h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        letter-spacing: 0em; }
+        .our-team .team-wrap .team-hover h3 i {
+          font-size: 14px;
+          color: #766f6f;
+          font-weight: 400;
+          text-transform: none; }
+          .our-team .team-wrap .team-hover h3 i:hover {
+            color: #766f6f; }
+      .our-team .team-wrap .team-hover i {
+        padding-right: 10px; }
+        .our-team .team-wrap .team-hover i:hover {
+          color: #fff; }
+
+.what-says {
+  padding-top: 115px;
+  background-color: #f9fbfb; }
+  .what-says .slider-wrap {
+    padding-top: 115px; }
+    .what-says .slider-wrap .left-slider {
+      position: relative;
+      text-align: center;
+      overflow: hidden; }
+      .what-says .slider-wrap .left-slider .left-slider-bg {
+        position: absolute;
+        background-color: #eff0f2;
+        width: 390px;
+        height: 360px;
+        top: 25px;
+        left: 50%;
+        margin-left: -195px;
+        z-index: 1; }
+      .what-says .slider-wrap .left-slider img {
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        position: relative; }
+      .what-says .slider-wrap .left-slider .input-wrap {
+        padding-top: 40px; }
+        .what-says .slider-wrap .left-slider .input-wrap input[type="radio"] {
+          display: none; }
+          .what-says .slider-wrap .left-slider .input-wrap input[type="radio"] + .radio-label:before {
+            content: '';
+            display: inline-block;
+            border-radius: 3px;
+            background-color: #d0d0d0;
+            width: 10px;
+            height: 10px;
+            -webkit-transition: all 250ms ease;
+            transition: all 250ms ease;
+            margin: 2px; }
+          .what-says .slider-wrap .left-slider .input-wrap input[type="radio"]:checked + .radio-label:before {
+            background-color: #71f6eb; }
+    .what-says .slider-wrap .right-slider {
+      text-align: center;
+      background-color: #eaebed;
+      margin-top: 25px;
+      padding: 90px 80px 68px 80px; }
+      .what-says .slider-wrap .right-slider h3 {
+        margin-top: 0; }
+        .what-says .slider-wrap .right-slider h3 i {
+          font-size: 14px;
+          color: #766f6f;
+          font-weight: 400; }
+      .what-says .slider-wrap .right-slider i {
+        color: #f2da3b; }
+    .what-says .slider-wrap .arrows-wrap {
+      padding-top: 30px;
+      float: right; }
+      .what-says .slider-wrap .arrows-wrap .left-arrow {
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #ffffff;
+        box-shadow: 4px 7px 11px 0px rgba(20, 20, 21, 0.05);
+        width: 53px;
+        height: 53px; }
+      .what-says .slider-wrap .arrows-wrap .right-arrow {
+        margin-left: 25px;
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #71f6eb;
+        box-shadow: 3px 5px 11px 0px rgba(20, 20, 21, 0.1);
+        width: 53px;
+        height: 53px; }

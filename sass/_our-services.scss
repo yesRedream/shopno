@@ -30,7 +30,7 @@
 					}
 
 					.hidden-text {
-						display: inline;
+						opacity: 1;
 					}
 
 				
@@ -116,9 +116,14 @@
 			}
 
 			
-			p {				
+			p {	
+				line-height: 25px;
+				max-height: 210px;
+				overflow: hidden;
+
 				.hidden-text {
-					display: none;
+					opacity: 0;
+
 				}
 
 			}

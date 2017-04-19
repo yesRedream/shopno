@@ -1,0 +1,33 @@
+.main-footer {
+	padding-top: 85px;
+	padding-bottom: 85px;
+	text-align: center;
+	background-color: #262b2e;
+
+	p {
+	color: rgba(255, 255, 255, 0.7);
+
+		span {
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+
+	.social {
+		display: inline-block;
+		width: 46px;
+		height: 40px;
+		text-align: center;
+		background-color: #424648;
+		color: #bbb8b9;
+		font-size: 24px;
+		line-height: 40px;
+		margin-left: 5px;
+		margin-bottom: 30px;
+
+		&:hover {
+			background-color: #6eeee4;
+			color: #070e0d;
+		}
+	}
+}

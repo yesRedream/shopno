@@ -2,11 +2,26 @@
 	padding-top: 120px;
 	padding-bottom: 115px;
 
+	@media #{$m} {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
 	.featured-img-wrap {
 		padding-top: 100px;
 
 		img {
 			padding-bottom: 15px;
+			margin-left: 13px;
+
+			&:nth-child(n*3) {
+				margin-left: 0;
+			}
+
+			@media #{$m} {
+				float: left;
+				width: 40%;
+			}
 		}
 	}
 }

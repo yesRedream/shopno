@@ -2,6 +2,10 @@
 	background-color:  #f9fbfb;
 	padding-top: 115px;
 
+	@media #{$sm} {
+		display: none;
+	}
+
 	.services-wrap {
 		padding-top: 115px;
 

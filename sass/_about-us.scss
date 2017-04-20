@@ -3,6 +3,11 @@
 	padding-bottom: 110px;
 	background-color:  #f8fafa;
 
+	@media #{$m} {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
 	h4 {
 		padding-bottom: 120px;
 	}
@@ -66,5 +71,16 @@
 		font-size: 20px;
 		line-height: 28px;
 		text-transform: uppercase;
+
+		@media #{$m} {
+			padding-top: 50px;
+			text-align: center;
+		}
+	}
+
+	p {
+		@media #{$m} {
+			text-align: center;
+		}
 	}
 }

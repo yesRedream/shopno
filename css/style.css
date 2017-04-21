@@ -2,7 +2,7 @@ h2 {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 38px;
-  line-height: 28px;
+  line-height: 48px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -176,17 +176,36 @@ p {
     .featured-works {
       padding-top: 60px;
       padding-bottom: 60px; } }
-  .featured-works .featured-img-wrap {
-    padding-top: 100px; }
-    .featured-works .featured-img-wrap img {
-      padding-bottom: 15px;
-      margin-left: 13px; }
-      .featured-works .featured-img-wrap img:nth-child(n*3) {
-        margin-left: 0; }
+  .featured-works .img-wrap {
+    padding-top: 100px;
+    text-align: center; }
+    .featured-works .img-wrap img {
+      margin-right: 15px;
+      padding-bottom: 15px; }
+      .featured-works .img-wrap img:nth-child(3n) {
+        margin-right: 0; }
+      @media only screen and (max-width: 1200px) {
+        .featured-works .img-wrap img {
+          width: 32%; } }
       @media only screen and (max-width: 992px) {
-        .featured-works .featured-img-wrap img {
-          float: left;
-          width: 40%; } }
+        .featured-works .img-wrap img {
+          width: 40%; }
+          .featured-works .img-wrap img:nth-child(3) {
+            margin-right: 15px; }
+          .featured-works .img-wrap img:nth-child(2), .featured-works .img-wrap img:nth-child(4) {
+            margin-right: 0; } }
+      @media only screen and (max-width: 768px) {
+        .featured-works .img-wrap img {
+          width: 45%;
+          margin-right: 10px;
+          padding-bottom: 10px; }
+          .featured-works .img-wrap img:nth-child(3) {
+            margin-right: 10px; }
+          .featured-works .img-wrap img:nth-child(2), .featured-works .img-wrap img:nth-child(4) {
+            margin-right: 0; } }
+    @media only screen and (max-width: 992px) {
+      .featured-works .img-wrap {
+        padding-top: 50px; } }
 
 .our-services {
   background-color: #f9fbfb;
@@ -204,13 +223,16 @@ p {
       .our-services .services-wrap .service .service-wrap {
         width: 100%;
         height: 100%;
-        padding: 140px 115px 50px 65px;
+        padding: 140px 115px 20px 65px;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
         .our-services .services-wrap .service .service-wrap:hover {
           background: #71f5ea;
           padding-top: 45px;
           color: black; }
+          @media only screen and (max-width: 1200px) {
+            .our-services .services-wrap .service .service-wrap:hover {
+              padding-top: 25px; } }
           .our-services .services-wrap .service .service-wrap:hover .dots {
             display: none; }
           .our-services .services-wrap .service .service-wrap:hover .hidden-text {
@@ -238,9 +260,15 @@ p {
         height: 422px;
         width: 474px;
         left: -15px; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service-2 {
+            width: 100%; } }
         .our-services .services-wrap .service-2 .service-wrap {
           width: 474px;
           padding-right: 60px; }
+          @media only screen and (max-width: 1200px) {
+            .our-services .services-wrap .service-2 .service-wrap {
+              width: 100%; } }
       .our-services .services-wrap .service-3 {
         background: url(../img/service-3.jpg) no-repeat center;
         height: 371px; }
@@ -249,29 +277,52 @@ p {
         height: 371px;
         width: 474px;
         left: -15px; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service-4 {
+            width: 100%; } }
         .our-services .services-wrap .service-4 .service-wrap {
           width: 474px;
           padding-right: 60px; }
+          @media only screen and (max-width: 1200px) {
+            .our-services .services-wrap .service-4 .service-wrap {
+              width: 100%; } }
       .our-services .services-wrap .service-5 {
         background: url(../img/service-5.jpg) no-repeat center;
         height: 370px;
         width: 474px; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service-5 {
+            width: 100%; } }
         .our-services .services-wrap .service-5 .service-wrap {
           width: 474px;
           padding-right: 60px; }
+          @media only screen and (max-width: 1200px) {
+            .our-services .services-wrap .service-5 .service-wrap {
+              width: 100%; } }
       .our-services .services-wrap .service-6 {
         background: url(../img/service-6.jpg) no-repeat center;
         height: 370px;
         width: 651px; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service-6 {
+            width: 100%;
+            left: -15px; } }
       .our-services .services-wrap .service p {
         line-height: 25px;
         max-height: 210px;
         overflow: hidden; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service p {
+            line-height: 23px;
+            max-height: 270px; } }
         .our-services .services-wrap .service p .hidden-text {
           opacity: 0; }
       .our-services .services-wrap .service .more-wrap {
         position: absolute;
         bottom: 50px; }
+        @media only screen and (max-width: 1200px) {
+          .our-services .services-wrap .service .more-wrap {
+            bottom: 25px; } }
         .our-services .services-wrap .service .more-wrap .more {
           display: inline-block;
           margin: 0;
@@ -279,7 +330,7 @@ p {
           text-transform: uppercase; }
         .our-services .services-wrap .service .more-wrap .arrow {
           margin-left: 20px;
-          bottom: 5px;
+          bottom: 11px;
           display: inline-block;
           position: relative;
           cursor: pointer;

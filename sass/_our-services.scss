@@ -19,7 +19,7 @@
 			.service-wrap {
 				width: 100%;
 				height: 100%;
-				padding: 140px 115px 50px 65px;
+				padding: 140px 115px 20px 65px;
 				-webkit-transition: all 0.5s ease-in-out;
 				-o-transition: all 0.5s ease-in-out;
 				transition: all 0.5s ease-in-out;
@@ -28,6 +28,10 @@
 					background: #71f5ea;
 					padding-top: 45px;
 					color: black;
+
+					@media #{$lg} {
+						padding-top: 25px;
+					}
 
 					.dots {
 						display: none;
@@ -79,9 +83,17 @@
 				width: 474px;
 				left: -15px;
 
+				@media #{$lg} {
+					width: 100%;
+				}
+
 				.service-wrap {
 					width: 474px;
 					padding-right: 60px;
+
+					@media #{$lg} {
+						width: 100%;
+					}
 				}
 			}
 
@@ -96,9 +108,17 @@
 				width: 474px;
 				left: -15px;
 
+				@media #{$lg} {
+					width: 100%;
+				}
+
 				.service-wrap {
 					width: 474px;
 					padding-right: 60px;
+
+					@media #{$lg} {
+						width: 100%;
+					}
 				}
 			}
 
@@ -106,10 +126,18 @@
 				background: url(../img/service-5.jpg) no-repeat center;
 				height: 370px;
 				width: 474px;
+
+				@media #{$lg} {
+					width: 100%;
+				}
 	
 				.service-wrap {
 					width: 474px;
 					padding-right: 60px;
+
+					@media #{$lg} {
+						width: 100%;
+					}
 				}
 			}
 
@@ -117,6 +145,11 @@
 				background: url(../img/service-6.jpg) no-repeat center;
 				height: 370px;
 				width: 651px;
+
+				@media #{$lg} {
+					width: 100%;
+					left: -15px;
+				}
 			}
 
 			
@@ -124,6 +157,11 @@
 				line-height: 25px;
 				max-height: 210px;
 				overflow: hidden;
+				
+				@media #{$lg} {
+					line-height: 23px;
+					max-height: 270px;
+				}
 
 				.hidden-text {
 					opacity: 0;
@@ -135,6 +173,10 @@
 			.more-wrap {
 				position: absolute;
 				bottom: 50px;
+
+				@media #{$lg} {
+					bottom: 25px;
+				}
 				
 				.more {
 					display: inline-block;
@@ -145,7 +187,7 @@
 
 				.arrow {
 					margin-left: 20px;
-					bottom: 5px;
+					bottom: 11px;
 					display: inline-block;
 					position: relative;
 					cursor: pointer;

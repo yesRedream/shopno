@@ -1,13 +1,19 @@
 .our-services {
 	background-color:  #f9fbfb;
 	padding-top: 115px;
+	padding-bottom: 115px;
 
-	@media #{$sm} {
-		display: none;
+	@media #{$m} {
+		padding-top: 65px;
+		padding-bottom: 65px;
 	}
-
 	.services-wrap {
 		padding-top: 115px;
+		
+
+		@media #{$m} {
+			display: none;
+		}
 
 		.service {
 			background-color: rgb(78, 78, 78);
@@ -220,6 +226,63 @@
 						transform: translateY(-7px) translateX(13px) rotate(-45deg);
 					}
 				}
+			}
+		}
+	}
+
+	.services-wrap-sm {
+		padding-top: 40px;
+		text-align: center;
+		@media only screen and (min-width : 992px) {
+			display: none;
+		}
+
+		[class^="service-wrap"] {
+			height: 370px;
+			margin-bottom: 30px;
+			color: #fff;
+			padding: 20px;
+			max-width: 474px;
+			display: inline-block;
+
+			@media #{$xs} {
+				padding: 10px;
+			}
+
+			h3 {
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
+			
+			p {
+				margin: 0;
+			}
+		}
+		
+		.service-wrap {
+
+			&-1 {
+				background: url(../img/service-1.jpg) no-repeat top center;
+			}
+
+			&-2 {
+				background: url(../img/service-2.jpg) no-repeat top center;
+			}
+
+			&-3 {
+				background: url(../img/service-3.jpg) no-repeat top center;
+			}
+
+			&-4 {
+				background: url(../img/service-4.jpg) no-repeat top center;
+			}
+
+			&-5 {
+				background: url(../img/service-5.jpg) no-repeat top center;
+			}
+
+			&-6 {
+				background: url(../img/service-6.jpg) no-repeat top center;
 			}
 		}
 	}

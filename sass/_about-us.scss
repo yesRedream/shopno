@@ -10,6 +10,10 @@
 
 	h4 {
 		padding-bottom: 120px;
+
+		@media #{$m} {
+			padding-bottom: 45px;
+		}	
 	}
 
 	.slider {

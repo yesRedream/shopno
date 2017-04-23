@@ -10,7 +10,10 @@
 	.team-wrap {
 		text-align: center;
 		padding-top: 115px;
-
+		
+		@media #{$sm} {
+			padding-top: 45px;
+		}
 
 		.team-img {
 			display: inline-block;
@@ -27,12 +30,12 @@
 
 			@media #{$lg} {
 				width: 32%;
-				padding: 110px 12px 12px 12px;
+				padding: 200px 12px 12px 12px;
 			}
 
 			@media #{$m} {
 				width: 45%;
-				padding: 120px 18px 15px 18px;
+				padding: 220px 18px 15px 18px;
 
 				&:nth-child(2n) {
 					margin-right: 0;
@@ -44,7 +47,7 @@
 			}
 
 			@media #{$sm} {
-				padding-top: 180px;
+				padding-top: 220px;
 				width: 100%;
 				max-width: 370px;
 			}
@@ -115,6 +118,15 @@
 			-o-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 			
+			@media #{$lg} {
+				padding: 25px;
+			}
+
+			@media #{$m} {
+				opacity: 1;
+				padding: 15px;
+			}
+
 			&:before {
 				display: block;
 				content: '';

@@ -2,4 +2,8 @@
 	min-height: 390px;
 	background: url(../img/brands.png) no-repeat center;
 	background-size: auto;
+
+	@media #{$sm} {
+		min-height: 200px;
+	}
 }

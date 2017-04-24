@@ -16,7 +16,7 @@
 		}	
 	}
 
-	.slider {
+	.about-us-slider {
 		position: relative;
 		text-align: center;
 		overflow: hidden;
@@ -37,37 +37,39 @@
 			z-index: 2;
 			position: relative;
 		}
+	}
 
-		.input-wrap {
-			padding-top: 40px;
+	.input-wrap {
+		text-align: center;
+		padding-top: 40px;
 
-			input[type="radio"] {
-			    display: none;
-			    
-			    + .radio-label {
-			      	&:before {
-			        	content: '';
-			        	display: inline-block;
-			       		border-radius: 3px;
-						background-color:  #d0d0d0;
-						width: 10px;
-						height: 10px;
-			        	transition: all 250ms ease;
-			        	margin: 2px;
-			        	cursor: pointer;
-			      	}
-			    }
-			    
-			    &:checked {
-			    	+ .radio-label {
-			        	&:before {
-			          		background-color: #71f6eb;
-			        	}
-			      	}
-			    }
-			}
+		input[type="radio"] {
+		    display: none;
+		    
+		    + .about-us-label {
+		      	&:before {
+		        	content: '';
+		        	display: inline-block;
+		       		border-radius: 3px;
+					background-color:  #d0d0d0;
+					width: 10px;
+					height: 10px;
+		        	transition: all 250ms ease;
+		        	margin: 2px;
+		        	cursor: pointer;
+		      	}
+		    }
+		    
+		    &:checked {
+		    	+ .about-us-label {
+		        	&:before {
+		          		background-color: #71f6eb;
+		        	}
+		      	}
+		    }
 		}
 	}
+
 	h3 {
 		margin: 0;
 		font-family: "Merriweather";

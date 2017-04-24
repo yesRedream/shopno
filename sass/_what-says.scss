@@ -49,7 +49,7 @@
 				input[type="radio"] {
 				    display: none;
 				    
-				    + .radio-label {
+				    + .whats-says-label {
 				      	&:before {
 				        	content: '';
 				        	display: inline-block;
@@ -64,7 +64,7 @@
 				    }
 				    
 				    &:checked {
-				    	+ .radio-label {
+				    	+ .whats-says-label {
 				        	&:before {
 				          		background-color: #71f6eb;
 				        	}
